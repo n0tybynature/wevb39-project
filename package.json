@@ -1,27 +1,21 @@
 {
-  "name": "web39-project",
+  "name": "web-39-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "cd client && npm i && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/n0tybynature/wevb39-project.git"
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.11"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/n0tybynature/wevb39-project/issues"
-  },
-  "homepage": "https://github.com/n0tybynature/wevb39-project#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.17.0",
-    "@typescript-eslint/parser": "^4.17.0",
     "eslint": "^7.21.0",
     "nodemon": "^2.0.7"
   },
